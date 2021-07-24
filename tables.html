@@ -1,0 +1,113 @@
+<!--
+    <tables>
+    
+    Prós 
+    - Visualização de dados via linhas e colunas.
+    - Boa Acessibilidade para leitura de dados
+
+    Contras
+    - Pouco flexível
+    - Precisa de estilização para melhor visualização
+
+    Não usar
+    - Para criar o seu layout
+-->
+
+<!--TABELA BÁSICA-->
+   <!--<TAble>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Viviane</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>23</td>
+        </tr>
+    </TAble>
+ --> 
+    <!--ORGANIZANDO TABELAS-->
+    <!--<TAble>
+        <caption>Pessoas por idade</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Viviane</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>3 Pessoas</td>
+            </tr>
+        </tfoot>
+       
+    </TAble>-->
+<!--TABELA COMPLEXA
+    2 LOJAS
+      Quantos produtos foram produzidos, quantos foram vendidos e agrupados por nome dos produtos
+-->
+<!--THead COMPLEXA-->
+<Table>
+    <CAPtion>Produzidos x Vendidos por loja</CAPtion>
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red;">
+        <col span="2" style="background-color: blue;">
+    
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2 "></th>
+            <th colspan="2" scope="colgroup">Comercial Lider</th>
+            <th colspan="2" scope="colgroup">Comercial Formosa</th>
+        </tr>
+        <tr>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+        </tr>
+        
+    </thead>
+ <!--TBODY COMPLEXO-->  
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>20</td>
+            <td>30</td>
+            <td>10</td>
+
+        </tr>
+
+        <tr>
+            <th scope="row">Panelas</th>
+            <td>9</td>
+            <td>10</td>
+            <td>5</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</Table>
